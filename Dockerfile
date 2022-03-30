@@ -17,7 +17,7 @@ RUN apk --no-cache add php php-fpm php-opcache php-openssl php-curl \
     nginx supervisor curl
 
 # https://github.com/codecasts/php-alpine/issues/21
-RUN ln -s /usr/bin/php7 /usr/bin/php
+# RUN ln -s /usr/bin/php7 /usr/bin/php
 
 # Configure nginx
 COPY config/nginx.conf /etc/nginx/nginx.conf
